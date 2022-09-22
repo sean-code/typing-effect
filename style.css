@@ -34,11 +34,37 @@ span{
 }
 img{
     margin-top: 30px;
+    margin-bottom: 10px;
     height: 250px;
     width: 200px;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    border-radius: 200px;
+    border-radius: 300%;
     
 }
+
+  #rotate {
+    animation: rotation 1s; 
+  }
+
+  @keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+  .linear {
+    animation-timing-function: linear;
+  }
+
+  .infinite {
+    animation-iteration-count: infinite;
+  }
+
+  #rotate {
+    animation: rotation 10s linear infinite;
+  }
