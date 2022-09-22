@@ -69,3 +69,16 @@ img{
   #rotate {
     animation: rotation 10s linear infinite;
   }
+
+/* Text Animation Glow */
+  h1 {
+    animation: glow 1s ease-in-out infinite 
+  }
+
+  @keyframes glow {
+    from {
+      text-shadow: 0 0 20px #3f33e6;
+    }
+    to {
+      text-shadow: 0 0 30px #33ac29, 0 0 10px #12b8ca;
+    }
