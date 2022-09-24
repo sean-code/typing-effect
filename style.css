@@ -71,16 +71,16 @@ img{
   }
 
 /* Text Animation Glow */
-  h1 {
-    animation: glow 1s ease-in-out infinite 
+ .only {
+    animation: glow 4s ease-in-out infinite 
   }
 
   @keyframes glow {
     from {
-      text-shadow: 0 0 20px #98f070;
+      text-shadow: 0 0 40px #98f070;
     }
     to {
-      text-shadow: 0 0 30px #33ac29, 0 0 10px #3d4617;
+      text-shadow: 0 0 50px #33ac29, 0 0 10px #849925;
     }
   }
 
@@ -107,7 +107,7 @@ img{
   color: #ffe6ff;
   text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #ff65bd,
     -0.2rem 0.1rem 1rem #ca370b, 0.2rem 0.1rem 1rem #ff65bd,
-    0 -0.5rem 2rem #ff2483, 0 0.5rem 3rem #ff2483;
+    0 -0.5rem 2rem #180bd1, 0 0.5rem 3rem #ff2483;
   animation: shine 2s forwards, flicker 3s infinite;
 }
 
@@ -138,7 +138,7 @@ img{
 }
 
 .fast-flicker {
-  animation: shine 2s forwards, blink 10s 1s infinite;
+  animation: shine 2s forwards, blink 8s 1s infinite;
 }
 
 @keyframes shine {
@@ -149,7 +149,7 @@ img{
   100% {
     color: #ffe6ff;
     text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #ff65bd,
-      -0.2rem 0.1rem 1rem #ff65bd, 0.2rem 0.1rem 1rem #ff65bd,
+      -0.2rem 0.1rem 1rem #ff65bd, 0.2rem 0.1rem 1rem #e72c96,
       0 -0.5rem 2rem #ff2483, 0 0.5rem 3rem #ff2483;
   }
 }
